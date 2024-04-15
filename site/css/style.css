@@ -1,0 +1,202 @@
+.element {
+    cursor: url('../image/emoji.png'), auto; /* Utilise une image comme curseur */
+}
+
+section.top-page {
+    background-color:transparent;
+    height: 0vh;
+    
+}
+
+header.head img {
+    width: 400px;
+    position: absolute;
+    top: 50%; /* Positionne le texte à 50% du haut du conteneur */
+    left: 50%; /* Positionne le texte à 50% de la gauche du conteneur */
+    transform: translate(-50%, -50%); /* Décale le texte de 50% de sa propre taille vers le haut et la gauche */
+    text-align: center;
+}
+
+body {
+    background-image: url('../image/nuit.jpg');
+    background-size: cover; /* Redimensionne l'image pour qu'elle remplisse tout l'espace disponible */
+    background-position: calc(); /* Centre l'image */
+    background-repeat: no-repeat; /* Optionnel : pour éviter la répétition de l'image */
+    margin: 0 auto;
+   
+}
+/*  navigation */
+
+
+
+
+.texte {
+    width: 400px;
+    position: absolute;
+    top: 15%; /* Positionne le texte à 50% du haut du conteneur */
+    left: 50%; /* Positionne le texte à 50% de la gauche du conteneur */
+    transform: translate(-50%, -50%); /* Décale le texte de 50% de sa propre taille vers le haut et la gauche */
+    text-align: center;
+    color: rgb(255, 0, 132); /* Couleur du lien */
+    font-size: 45px; /* Taille de la police du lien */
+    font-weight: bold;
+}
+.lien {
+    position: absolute;
+    top: 550px; /* Déplace le texte de 20 pixels vers le bas */
+    left: 620px; /* Déplace le texte de 50 pixels vers la droite */
+    color: rgb(255, 24, 24); /* Change la couleur du texte des liens en rouge */
+    font-weight: bold;
+
+    a {
+        color: rgb(255, 221, 0); /* Change la couleur du texte des liens en rouge 243, 255, 24 */
+        font-weight: bold;
+
+    }
+
+}
+header.head img {
+    width: 600px;
+    position: absolute;
+    top: 5%; /* Positionne le texte à 50% du haut du conteneur */
+    left: 30%; /* Positionne le texte à 50% de la gauche du conteneur */
+    transform: translate(-50%, -50%); /* Décale le texte de 50% de sa propre taille vers le haut et la gauche */
+    text-align: center;
+}
+
+/* boutons */
+.boutton {
+    /**/
+    position: absolute;
+    top: 65%; /* Positionne le texte à 50% du haut du conteneur */
+    left: 35%; /* Positionne le texte à 50% de la gauche du conteneur */
+    /**/
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    color: #f3f9ff;
+    background-color: #3cd201;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.boutton:hover {
+    background-color: #0007c5;
+    animation: pulse 0.3s infinite; /* Animation pulsante */
+    color: #ffffff;
+    border-color: #154d89;
+}
+
+/* Stylisation de l'intérieur des boutons */
+.boutton span {
+    display: block;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+
+.bouttondeux {
+    /**/
+    position: absolute;
+    top: 65%; /* Positionne le texte à 50% du haut du conteneur */
+    left: 55%; /* Positionne le texte à 50% de la gauche du conteneur */
+    /**/
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    color: #fdfdff;
+    background-color: #3cd201;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.bouttondeux:hover {
+    background-color: #f96502;
+    animation: pulse 0.3s infinite; /* Animation pulsante */
+    color: #ffffff;
+    border-color: #19599e;
+    
+}
+
+/* Stylisation de l'intérieur des boutons */
+.bouttondeux span {
+    display: block;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.bouttont {
+    /**/
+    position: absolute;
+    top: 75%; /* Positionne le texte à 50% du haut du conteneur */
+    left: 43%; /* Positionne le texte à 50% de la gauche du conteneur */
+    /**/
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    color: #d01cd9;
+    background-color: #17daf4;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.bouttont:hover {
+    background-color: #8e0295;
+    animation: pulse 0.2s infinite; /* Animation pulsante */
+    color: #ffffff;
+    border-color: #19599e;
+    
+}
+
+/* Stylisation de l'intérieur des boutons */
+.bouttont span {
+    display: block;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/**/
+.head img {
+    animation: moveUpDown 2s infinite alternate; /* Utilise l'animation moveUpDown pendant 2 secondes, en boucle */
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Démarre à la position initiale */
+    }
+    100% {
+        transform: translateY(20px); /* Se déplace de 20 pixels vers le bas */
+    }
+}
+/**/
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+@keyframes blink {
+    0%, 49.9%, 100% {
+        opacity: 1; /* Opacité maximale */
+    }
+    50%, 99.9% {
+        opacity: 0; /* Opacité minimale */
+    }
+}
